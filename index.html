@@ -14,39 +14,39 @@
    
     <div id="calculadora">
 
-        <p class="resultado">1+1=2</p>
+        <p id="resultado"></p>
         <table>
             <tr>
-                <td><button class="teclas">C</button></td>
-                <td><button class="teclas"><</button></td>
-                <td><button class="teclas">/</button></td>
-                <td><button class="teclas">*</button></td>
+                <td><button class="teclas" onclick="limparTela()">C</button></td>
+                <td><button class="teclas" onclick="limparCaractere()">⌫</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('/')">/</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('*')">*</button></td>
             </tr>
 
             <tr>
-                <td><button class="teclas">7</button></td>
-                <td><button class="teclas">8</button></td>
-                <td><button class="teclas">9</button></td>
-                <td><button class="teclas">-</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('7')">7</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('8')">8</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('9')">9</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('-')">-</button></td>
             </tr>
 
             <tr>
-                <td><button class="teclas">4</button></td>
-                <td><button class="teclas">5</button></td>
-                <td><button class="teclas">6</button></td>
-                <td><button class="teclas">+</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('4')">4</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('5')">5</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('6')">6</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('+')">+</button></td>
             </tr>
 
             <tr>
-                <td><button class="teclas">1</button></td>
-                <td><button class="teclas">2</button></td>
-                <td><button class="teclas">3</button></td>
-                <td rowspan="2"><button class="teclas tecla_height">=</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('1')">1</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('2')">2</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('3')">3</button></td>
+                <td rowspan="2"><button class="teclas tecla_height" onclick="calcular()">=</button></td>
             </tr>
             
             <tr>
-                <td colspan="2"><button class="teclas tecla_width ">0</button></td>
-                <td><button class="teclas">.</button></td>
+                <td colspan="2"><button class="teclas tecla_width" onclick="inserirNaTela('0')">0</button></td>
+                <td><button class="teclas" onclick="inserirNaTela('.')">.</button></td>
             </tr>
         </table>
     </div>
