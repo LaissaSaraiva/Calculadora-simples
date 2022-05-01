@@ -1,2 +1,3 @@
 # Calculadora-simples
- Projeto com objetivo de utilizar HTML, CSS e Javascript
+ Projeto com objetivo de reforçar os estudos de HTML, CSS e utilizar Javascript.
+
